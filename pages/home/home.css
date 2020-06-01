@@ -1,0 +1,198 @@
+html {
+    color: white;
+    background: url("../../assets/imgs/background.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.presentation {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-flow: wrap column;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+}
+
+.presentation h2 {
+    margin-top: 180px;
+    font-size: 35px;
+}
+
+.presentation h1 {
+    font-size: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    padding-right: 60px;
+    justify-content: flex-start;
+    flex-direction: row-reverse;
+}
+
+.creditos, .fale-conosco {
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 1);
+    margin: 20px 0 0 20px;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.creditos:hover, .fale-conosco:hover {
+    cursor: pointer;
+}
+
+.beauty-bar {
+    min-height: 2px;
+    width: 0px;
+    transition: 0.2s all ease-in-out;
+}
+
+.creditos:hover .beauty-bar {
+    background-color: white;
+    width: 100%;
+}
+
+.fale-conosco:hover .beauty-bar {
+    background-color: white;
+    width: 100%;
+}
+
+.page-itself {
+    border-radius: 8px 8px 0 0;
+    margin: 250px auto 0;
+    background-color: rgb(248, 248, 248);
+    max-width: 1400px;
+    box-shadow: 0px 0px 77px 0px rgba(0,0,0,0.75);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 63);
+}
+
+.page-itself h1 {
+    /* text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.452); */
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+
+.page-itself sub {
+    color: rgba(0, 0, 0, 0.6)
+}
+
+.empresas-container {
+    display: flex;
+    flex-direction: column;
+    margin: 60px auto;
+    max-width: 1100px;
+}
+
+.empresa-esquerda, .empresa-direita {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.empresa-esquerda img {
+    margin-right: 20px;
+}
+
+.empresa-esquerda {
+    text-align: left;
+}
+
+.empresa-direita {
+    text-align: right;
+    flex-direction: row-reverse;
+}
+
+.empresa-direita img {
+    margin-left: 20px;
+}
+
+.descricao h2 {
+    font-size: 30px;
+    color: rgba(0,0,0,0.85);
+}
+
+.descricao p {
+    font-size: 18px;
+    color: rgba(0,0,0,0.5);
+}
+
+.empresas-container img {
+    width: 200px;
+    transition: 0.2s ease-in-out;
+}
+
+.empresas-container img:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.15);
+}
+
+.fonte {
+    margin-top: 110px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.fonte a {
+    opacity: 0.5;
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;               
+    background-color:rgba(0, 0, 0, 0.1);
+    height: 1px;
+  }
+
+a > img {
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 920px) {
+    .presentation h2 {
+        margin-top: 40px;
+        margin-bottom: 25px;
+        font-size: 20px
+    }
+    .presentation h1 {
+        font-size: 40px;
+    }
+
+    .creditos, .fale-conosco {
+        padding: 15px;
+        font-size: 12px;
+    }
+
+    .empresa-esquerda, .empresa-direita {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    a > img {
+        margin-bottom: 20px;
+    }
+
+    .empresas-container {
+        display: flex;
+        flex-direction: column;
+        margin: 25px auto;
+        max-width: 1100px;
+    }
+
+    .descricao p {
+        font-size: 16px;
+        color: rgba(0,0,0,0.5);
+        margin-top: 8px;
+    }
+
+}

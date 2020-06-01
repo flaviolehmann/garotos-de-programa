@@ -1,0 +1,5 @@
+@import url('./assets/fonts/tomorrow.css');
+
+html, body {
+    font-family: 'Tomorrow', sans-serif;
+}
